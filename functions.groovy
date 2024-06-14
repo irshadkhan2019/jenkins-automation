@@ -35,7 +35,7 @@ def findPodsFromName(String namespace, String name) {
 // notify slack about CICD success or Failure
 def notifySlack(text, channel, attachments) {
     //  slack webhook url and token
-    def slackURL = ''
+    def slackURL = 'https://hooks.slack.com/services/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'
     def jenkinsIcon = 'https://a.slack-edge.com/205a/img/services/jenkins-ci_72.png'
 
     def payload = JsonOutput.toJson([
